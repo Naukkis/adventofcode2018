@@ -48,10 +48,6 @@ console.log(twoTimes, threeTimes);
 console.log(twoTimes * threeTimes);
 
 // part 2
-function compareAllStringsTogether() {
-  IDs.forEach(x => onlyOneCharDifference(x));
-}
-
 function onlyOneCharDifference(string1) {
   let differenceCount = 0;
 
@@ -85,4 +81,4 @@ function onlyOneCharDifference(string1) {
   }
 }
 
-compareAllStringsTogether();
+IDs.forEach(x => onlyOneCharDifference(x));
